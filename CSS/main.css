@@ -1,0 +1,62 @@
+body {
+  background-color: rgb(247, 236, 222);
+  font-family: "PT Sans Caption", sans-serif;
+  line-height: 24px;
+}
+::selection {
+  color: black;
+  background: rgb(254 194 96);
+}
+:root {
+  background-color: rgb(247, 236, 222);
+  font-family: "PT Sans Caption", sans-serif;
+  line-height: 24px;
+}
+
+.bookmarker .container h1.py-2 {
+  font-family: Pacifico, cursive;
+  font-size: 50px;
+  line-height: 60px;
+  color: rgb(53, 46, 40);
+  isolation: isolate;
+}
+.bookmarker .container h1::after {
+  content: " ";
+  width: 100%;
+  height: 25%;
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  background-color: rgb(254 194 96);
+  z-index: -1;
+  transition: all 0.3s;
+}
+
+.bookmarker .container h1:hover::after {
+  height: 50%;
+}
+
+.bookmarker h2 {
+  user-select: none;
+  font-family: Righteous, cursive;
+  font-size: 25px;
+  line-height: 30px;
+  background-image: linear-gradient(to right, rgb(60 165 92), rgb(181 172 73));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.bookmark-form {
+  border-width: 2px 0 2px 0;
+  border-style: dotted;
+  border-color: rgb(53, 46, 40);
+}
+
+.bookmark-form .form-control:focus {
+  border-color: rgb(217 156 57);
+  box-shadow: 0 0 0 0.25rem rgb(254 194 96 / 33%);
+}
+
+.rounded-circle {
+  width: 25px;
+  height: 25px;
+}
